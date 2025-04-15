@@ -2,11 +2,12 @@
 a vim syntax file for amber
 
 ## installation
-the `amber.vim` file can be installed locally in your `.vim/syntax` directory.
+the contents of this repository can be installed locally in your `.vim` or `~/.config/nvim` directory
 
-```
-mkdir ~/.vim/syntax
-wget https://raw.githubusercontent.com/gbhorwood/amber.vim/main/amber.vim -o ~/.vim/syntax/amber.vim
+the recommended way is to use a plugin manager such as Vim-Plug and add this to your `.vimrc`:
+
+```vim
+Plug 'gbhorwood/amber.vim'
 ```
 
 ## usage
@@ -14,13 +15,6 @@ in vim, set the syntax to 'amber"
 
 ```
 :set syntax=amber
-```
-
-## syntax auto-detection
-amber syntax can be detected by modifying `filetype.vim` and adding
-
-```
-au BufNewFile,BufRead *.ab  setf amber
 ```
 
 ## contributing
